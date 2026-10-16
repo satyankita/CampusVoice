@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusVoice | Student Feedback</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">C</span>
+        <span>Campus<span class="brand-light">Voice</span></span>
+      </a>
+
+      <p class="sidebar-label">WORKSPACE</p>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">
+          <span>✦</span> Submit Feedback
+        </a>
+        <a href="feedback.html" class="nav-link">
+          <span>▤</span> All Feedback
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="help-icon">?</div>
+        <div>
+          <strong>Need help?</strong>
+          <p>We're here for you.</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="breadcrumb">Workspace / <span>Feedback</span></p>
+          <h2>Student Feedback</h2>
+        </div>
+        <div class="profile">
+          <div class="profile-avatar">S</div>
+          <div>
+            <strong>Student Portal</strong>
+            <p>Feedback workspace</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="welcome-section">
+        <div>
+          <span class="eyebrow"><span class="status-dot"></span> YOUR VOICE MATTERS</span>
+          <h1>Help us make campus <span>better.</span></h1>
+          <p>Your thoughts can make a real difference. Share your experience and help us build a better learning environment for everyone.</p>
+        </div>
+        <div class="welcome-art" aria-hidden="true">
+          <div class="art-circle">✦</div>
+          <div class="art-star star-one">✧</div>
+          <div class="art-star star-two">✦</div>
+          <div class="art-card">💬</div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <div class="form-card">
+          <div class="card-heading">
+            <div>
+              <span class="section-kicker">WE'D LOVE TO HEAR FROM YOU</span>
+              <h2>Share your feedback</h2>
+              <p>It only takes a minute to make an impact.</p>
+            </div>
+            <div class="heading-icon">✎</div>
+          </div>
+
+          <form id="feedbackForm">
+            <div class="form-group">
+              <label for="studentName">Your full name <span>*</span></label>
+              <input
+                type="text"
+                id="studentName"
+                name="studentName"
+                placeholder="e.g. Satyankita Singh"
+                required
+                maxlength="100"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="course">Course or department</label>
+              <select id="course" name="course">
+                <option value="">Select your course</option>
+                <option value="Computer Applications">Computer Applications</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Business Administration">Business Administration</option>
+                <option value="Arts and Humanities">Arts and Humanities</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <fieldset class="rating-group">
+              <legend>How would you rate your experience? <span>*</span></legend>
+              <div class="rating-options">
+                <label class="rating-option">
+                  <input type="radio" name="rating" value="1" required />
+                  <span class="rating-star">★</span>
+                  <span class="rating-number">1</span>
+                </label>
+                <label class="rating-option">
+                  <input type="radio" name="rating" value="2" />
+                  <span class="rating-star">★</span>
+                  <span class="rating-number">2</span>
+                </label>
+                <label class="rating-option">
+                  <input type="radio" name="rating" value="3" />
+                  <span class="rating-star">★</span>
+                  <span class="rating-number">3</span>
+                </label>
+                <label class="rating-option">
+                  <input type="radio" name="rating" value="4" />
+                  <span class="rating-star">★</span>
+                  <span class="rating-number">4</span>
+                </label>
+                <label class="rating-option">
+                  <input type="radio" name="rating" value="5" />
+                  <span class="rating-star">★</span>
+                  <span class="rating-number">5</span>
+                </label>
+              </div>
+              <div class="rating-caption">
+                <span>Needs improvement</span>
+                <span>Excellent!</span>
+              </div>
+            </fieldset>
+
+            <div class="form-group">
+              <label for="comments">Your comments <span>*</span></label>
+              <textarea
+                id="comments"
+                name="comments"
+                placeholder="Tell us what went well or what we could improve..."
+                rows="5"
+                maxlength="2000"
+                required
+              ></textarea>
+              <div class="field-hint">Be honest. Your feedback helps us improve.</div>
+            </div>
+
+            <button type="submit" class="submit-button" id="submitButton">
+              Submit feedback <span>→</span>
+            </button>
+            <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="right-column">
+          <div class="insight-card">
+            <div class="insight-top">
+              <span class="insight-icon">✦</span>
+              <span class="insight-label">CAMPUS PULSE</span>
+            </div>
+            <h2>Your voice creates <br />real <span>change.</span></h2>
+            <p>Every piece of feedback helps us understand what matters to students.</p>
+            <div class="insight-divider"></div>
+            <div class="insight-footer">
+              <div class="mini-avatars">
+                <span>A</span><span>R</span><span>M</span><span>+</span>
+              </div>
+              <span>Every voice counts</span>
+            </div>
+          </div>
+
+          <div class="tip-card">
+            <div class="tip-icon">✧</div>
+            <div>
+              <h3>A little tip</h3>
+              <p>Specific and constructive feedback helps us understand your experience and take meaningful action.</p>
+            </div>
+          </div>
+
+          <div class="quick-link-card">
+            <div class="quick-link-icon">▤</div>
+            <div class="quick-link-copy">
+              <h3>Community feedback</h3>
+              <p>See what other students are sharing.</p>
+              <a href="feedback.html">Explore feedback <span>→</span></a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <footer class="page-footer">
+        <span>© 2026 CampusVoice</span>
+        <span>Made for a better campus <span class="footer-heart">♥</span></span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/form.js"></script>
+</body>
+</html>

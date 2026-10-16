@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Feedback | CampusVoice</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">C</span>
+        <span>Campus<span class="brand-light">Voice</span></span>
+      </a>
+
+      <p class="sidebar-label">WORKSPACE</p>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">
+          <span>✦</span> Submit Feedback
+        </a>
+        <a href="feedback.html" class="nav-link active">
+          <span>▤</span> All Feedback
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="help-icon">?</div>
+        <div>
+          <strong>Need help?</strong>
+          <p>We're here for you.</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="breadcrumb">Workspace / <span>All Feedback</span></p>
+          <h2>Community Feedback</h2>
+        </div>
+
+        <a href="index.html" class="header-button">＋ Give Feedback</a>
+      </header>
+
+      <section class="feedback-welcome">
+        <span class="eyebrow">CAMPUS COMMUNITY</span>
+        <h1>Every voice tells a <span>story.</span></h1>
+        <p>Explore feedback shared by students and discover how we're making our campus better together.</p>
+      </section>
+
+      <section class="feedback-stats">
+        <article class="stat-card">
+          <div class="stat-icon purple-icon">▤</div>
+          <p>Total feedback</p>
+          <h2 id="totalFeedback">—</h2>
+          <span>Student responses</span>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-icon yellow-icon">★</div>
+          <p>Average rating</p>
+          <h2 id="averageRating">— <small>/ 5</small></h2>
+          <span>Across all responses</span>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-icon green-icon">✓</div>
+          <p>Positive ratings</p>
+          <h2 id="positiveFeedback">—</h2>
+          <span>Ratings of 4 or 5 stars</span>
+        </article>
+      </section>
+
+      <section class="feedback-list-section">
+        <div class="feedback-list-heading">
+          <div>
+            <h2>Student responses</h2>
+            <p>Honest thoughts from our campus community.</p>
+          </div>
+
+          <button id="refreshButton" class="refresh-button" type="button">
+            ↻ Refresh
+          </button>
+        </div>
+
+        <p id="feedbackStatus" class="feedback-status" role="status" aria-live="polite">
+          Loading feedback...
+        </p>
+
+        <div id="feedbackList" class="feedback-list"></div>
+      </section>
+
+      <footer class="page-footer">
+        <span>© 2026 CampusVoice</span>
+        <span>Made for a better campus <span class="footer-heart">♥</span></span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/feedback.js"></script>
+</body>
+</html>
