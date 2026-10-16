@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/feedback";
+const API_URL = "https://campus-voice-lime.vercel.app/api/feedback";
 
 const feedbackList = document.getElementById("feedbackList");
 const feedbackStatus = document.getElementById("feedbackStatus");

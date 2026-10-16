@@ -5,7 +5,7 @@ const submitButton = document.getElementById("submitButton");
 // event.preventDefault();
 // console.log("Feedback form submitted");
 
-const API_URL = "http://localhost:5000/api/feedback";
+const API_URL = "https://campus-voice-lime.vercel.app/api/feedback";
 
 feedbackForm.addEventListener("submit", async (event) => {
   event.preventDefault();
